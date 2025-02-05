@@ -4,8 +4,8 @@
         "detalhes": "Bata com um martelo antes de abrir o pacote. Misture o tempero, coloque em uma vasilha e aproveite seu snack :)"
     },
     {
-        "titulo": "Pão doce",
-        "detalhes": "Abra o pão e coloque o seu suco em pó favorito."
+        "titulo": "P\u00e3o doce",
+        "detalhes": "Abra o p\u00e3o e coloque o seu suco em p\u00f3 favorito."
     },
     {
         "titulo": "Sorvete com cristais de leite",
@@ -13,18 +13,22 @@
     },
     {
         "titulo": "Iogurte natural",
-        "detalhes": "Deixe o leite fora da geladeira (esse é mentira, não faça isso)."
+        "detalhes": "Deixe o leite fora da geladeira (esse \u00e9 mentira, n\u00e3o fa\u00e7a isso)."
     },
     {
         "titulo": "Homer Simpson",
         "detalhes": "~( 8(|)"
     },
     {
-        "titulo": "Numero mágico",
+        "titulo": "Numero m\u00e1gico",
         "detalhes": "142857"
     },
     {
-        "titulo": "Série da Fundação - Isaac Asimov",
-        "detalhes": "É boa, leia."
+        "titulo": "S\u00e9rie da Funda\u00e7\u00e3o - Isaac Asimov",
+        "detalhes": "\u00c9 boa, leia."
+    },
+    {
+        "titulo": "pau",
+        "detalhes": "piroca"
     }
 ]
