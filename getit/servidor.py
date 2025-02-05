@@ -4,11 +4,6 @@ import views
 
 app = Flask(__name__)
 
-NOTE_TEMPLATE = """  <li>
-    <h3>{title}</h3>
-    <p>{details}</p>
-  </li>
-"""
 
 # Configurando a pasta de arquivos estáticos
 app.static_folder = "static"
