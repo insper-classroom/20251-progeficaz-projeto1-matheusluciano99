@@ -1,5 +1,4 @@
-from flask import Flask, render_template_string, url_for
-from utils import load_data, load_template
+from flask import Flask, render_template_string
 import views
 
 
@@ -9,25 +8,6 @@ NOTE_TEMPLATE = """  <li>
     <h3>{title}</h3>
     <p>{details}</p>
   </li>
-"""
-
-RESPONSE_TEMPLATE = """<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Get-it</title>
-</head>
-<body>
-
-<img src="{{{{ url_for('static', filename='img/logo-getit.png') }}}}">
-<p>Como o Post-it, mas com outro verbo</p>
-
-<ul>
-{notes}
-</ul>
-
-</body>
-</html>
 """
 
 # Configurando a pasta de arquivos estáticos
