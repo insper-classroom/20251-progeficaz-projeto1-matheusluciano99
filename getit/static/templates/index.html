@@ -5,7 +5,11 @@
     <title>Get-it</title>
   </head>
   <body>
-    <img src="{{{{ url_for('static', filename='img/logo-getit.png') }}}}" />
+    <img
+      src="{{{{ url_for('static', filename='img/logo-getit.png') }}}}"
+      width="100"
+      height="60"
+    />
     <p>Como o Post-it, mas com outro verbo</p>
 
     <form action="/submit" method="POST">
