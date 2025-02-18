@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(245, 138, 62);
+}
+
+title {
+    color: blue;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+li {
+    color: whitesmoke;
+}
+
+p {
+    color: black;
+}
