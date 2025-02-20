@@ -16,3 +16,9 @@ li {
 p {
     color: black;
 }
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

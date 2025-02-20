@@ -9,13 +9,14 @@
     <title>Get-it</title>
   </head>
   <body>
-    <img
-      src="{{{{ url_for('static', filename='img/logo-getit.png') }}}}"
-      width="100px"
-      height="60px"
-    />
-    <p>Como o Post-it, mas com outro verbo</p>
-
+    <div class="header">
+      <img
+        src="{{{{ url_for('static', filename='img/logo-getit.png') }}}}"
+        width="100px"
+        height="60px"
+      />
+      <p>Como o Post-it, mas com outro verbo</p>
+    </div>
     <form action="/submit" method="POST">
       <label for="titulo">Título</label>
       <input id="titulo" type="text" name="titulo" />
