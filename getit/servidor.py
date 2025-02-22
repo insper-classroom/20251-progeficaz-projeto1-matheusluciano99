@@ -33,5 +33,14 @@ def submit_form():
     return redirect(url_for("index"))
 
 
+@app.route("/delete/<string:id>", methods=["GET"])
+def delete_note(id):
+    con = sql.connect("db_web.db")
+    cur = con.cursor()
+    cur.execute("delete from notes where id = ?", (id,))
+    con.commit()
+    return redirect("/")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
