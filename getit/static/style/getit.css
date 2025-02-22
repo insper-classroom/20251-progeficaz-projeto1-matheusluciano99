@@ -4,34 +4,35 @@ body {
 
 title {
     color: blue;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 ul {
     list-style: none;
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
+    justify-content: center;
 }
 
 li {
     background: #fff7ad;
-    padding: 15px;
-    padding-bottom: 35px;
-    width: 200px;
-    min-height: 150px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    padding: 0.9375rem;
+    padding-bottom: 2.1875rem;
+    width: 12.5rem;
+    min-height: 9.375rem;
+    border-radius: 0.25rem;
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(0,0,0,0.1);
     transition: transform 0.2s;
     position: relative;
 }
 
 li:hover {
     transform: scale(1.02);
-    box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
+    box-shadow: 0.1875rem 0.1875rem 0.75rem rgba(0,0,0,0.2);
 }
 
 li p {
@@ -47,11 +48,11 @@ p {
 
 .header {
     background-color: #ffffff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 0.625rem 1.25rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .header p {
@@ -62,16 +63,16 @@ p {
 
 .form-card {
     background: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.25rem;
+    margin: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
 }
 
 .form-card form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .form-card label {
@@ -80,46 +81,62 @@ p {
 }
 
 .form-card input {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 0.5rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
 }
 
 .form-card input[type="submit"] {
     background: #ffd700;
     border: none;
-    padding: 12px;
-    border-radius: 4px;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
     cursor: pointer;
     font-weight: bold;
     transition: background 0.2s;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .form-card input[type="submit"]:hover {
     background: #ffc600;
 }
 
-.delete-button {
+.note-controls {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 0.625rem;
+    right: 0.625rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
 }
 
-.delete-button a {
-    color: #f44336;
+.edit-button {
+    color: #4CAF50;
     text-decoration: none;
-    padding: 8px;
-    border-radius: 4px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
     transition: all 0.2s ease;
 }
 
-.delete-button a:hover {
+.edit-button:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+    transform: scale(1.1);
+}
+
+.delete-button {
+    color: #f44336;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease;
+}
+
+.delete-button:hover {
     background-color: rgba(244, 67, 54, 0.1);
     transform: scale(1.1);
 }
 
-.delete-button i {
+.note-controls i {
     font-size: 1.2em;
 }
