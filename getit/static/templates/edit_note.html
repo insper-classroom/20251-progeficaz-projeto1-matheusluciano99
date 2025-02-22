@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <link
+    rel="stylesheet"
+    href="{{{{ url_for('static', filename='style/getit.css') }}}}"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Get-it - Editar Nota</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="{{{{ url_for('static', filename='img/logo-getit.png') }}}}"
+        width="100px"
+        height="60px"
+      />
+      <p>Como o Post-it, mas com outro verbo</p>
+    </div>
+    <div class="form-card">
+      <form action="/update/{id}" method="POST">
+        <label for="titulo">Título</label>
+        <input id="titulo" type="text" name="Title" required value="{title}" />
+        <label for="detalhes">Detalhes</label>
+        <input id="detalhes" name="Description" required value="{details}" />
+        <input type="submit" value="Atualizar" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -12,3 +12,11 @@ def index(data):
     notes = "\n".join(notes_li)
 
     return load_template("index.html").format(notes=notes)
+
+
+def edit_template(note):
+    return load_template("edit_note.html").format(
+        id=note["Id"],
+        title=note["Title"],
+        details=note["Description"],
+    )
