@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='style/getit.css') }}"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Get-it - Página não encontrada</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="{{ url_for('static', filename='img/logo-getit.png') }}"
+        width="100px"
+        height="60px"
+      />
+      <p>Como o Post-it, mas com outro verbo</p>
+    </div>
+    <div class="error-container">
+      <h1>404</h1>
+      <h2>Página não encontrada</h2>
+      <p>A página que você está procurando não existe.</p>
+      <a href="{{ url_for('index') }}" class="back-button">
+        <i class="fas fa-home"></i> Voltar para a página inicial
+      </a>
+    </div>
+  </body>
+</html>

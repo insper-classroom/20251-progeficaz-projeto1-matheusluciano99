@@ -65,5 +65,10 @@ def edit_note(id):
     return render_template_string(views.edit_template(note))
 
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template_string(views.error_404()), 404
+
+
 if __name__ == "__main__":
     app.run(debug=True)

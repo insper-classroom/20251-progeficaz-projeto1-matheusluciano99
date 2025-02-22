@@ -20,3 +20,7 @@ def edit_template(note):
         title=note["Title"],
         details=note["Description"],
     )
+
+
+def error_404():
+    return load_template("404.html")

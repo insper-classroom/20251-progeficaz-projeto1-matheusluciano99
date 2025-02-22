@@ -140,3 +140,47 @@ p {
 .note-controls i {
     font-size: 1.2em;
 }
+
+/* ERROR 404 */
+
+.error-container {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-container h1 {
+    font-size: 80px;
+    color: #f44336;
+    margin: 0;
+}
+
+.error-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.error-container p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffd700;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.back-button:hover {
+    background: #ffc600;
+    transform: scale(1.05);
+}
