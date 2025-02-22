@@ -100,3 +100,26 @@ p {
 .form-card input[type="submit"]:hover {
     background: #ffc600;
 }
+
+.delete-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.delete-button a {
+    color: #f44336;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.delete-button a:hover {
+    background-color: rgba(244, 67, 54, 0.1);
+    transform: scale(1.1);
+}
+
+.delete-button i {
+    font-size: 1.2em;
+}
