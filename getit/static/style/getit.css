@@ -9,8 +9,36 @@ title {
     margin-bottom: 20px;
 }
 
+ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 li {
-    color: whitesmoke;
+    background: #fff7ad;
+    padding: 15px;
+    padding-bottom: 35px;
+    width: 200px;
+    min-height: 150px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    position: relative;
+}
+
+li:hover {
+    transform: scale(1.02);
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
+}
+
+li p {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+    word-wrap: break-word;
 }
 
 p {
@@ -18,7 +46,57 @@ p {
 }
 
 .header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
-    flex-direction: row;
     align-items: center;
+    gap: 20px;
+}
+
+.header p {
+    color: #666;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.form-card {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-card label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-card input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-card input[type="submit"] {
+    background: #ffd700;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+.form-card input[type="submit"]:hover {
+    background: #ffc600;
 }
