@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 # Configurando a pasta de arquivos estáticos
 app.static_folder = "static"
+# commit
 
 
 @app.route("/")
